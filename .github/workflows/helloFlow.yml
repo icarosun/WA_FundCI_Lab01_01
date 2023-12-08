@@ -1,12 +1,11 @@
-name: HelloFlow
+name: Hello Flow
 on:
-  schedule:
-    - cron: '*/5 * * * *'
+  push
 jobs:
   first-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Diga oi
-        run: echo "Hello World!"
-      - name: Diva valeu
-        run: echo "Valeu - bye!"
+     - name: Diga oi
+       run: echo "Hello World!"
+     - name: Diga valeu
+       run: echo "Valeu - bye!"
